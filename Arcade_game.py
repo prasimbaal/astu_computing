@@ -5,6 +5,7 @@
 3-Tesfalem Badeg UGR/25473/14
 4-Saba Delelegn UGR/26849/14
 5-Fatiya Jeylan UGR/26030/14   '''
+"submitted to mr ______________ "
 
 from cs1graphics import *
 import time
