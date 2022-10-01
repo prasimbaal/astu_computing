@@ -8,6 +8,7 @@
 
 from cs1graphics import *
 import time
+
 from random import *
 import threading
 
@@ -134,7 +135,7 @@ level6 = Path(Point(0,630),Point(1000,610),Point(1000,630),Point(0,650))
 level6.setBorderColor('red')
 level6.setBorderWidth(3)
 
-#Creating the ladder's
+#Creating the ladders
 
 ladder = Path(Point(400,217),Point(400,0),Point(370,0),Point(370,218)) #escape ladder  x=30 y=217
 ladder.setBorderColor('yellow')
