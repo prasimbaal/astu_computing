@@ -1,5 +1,5 @@
 class Node:
-    ## WRITE NODE CONSTRUCTOR HERE ##
+    ## NODE CONSTRUCTOR HERE ##
     def __init__(self, value):
         self.value = value
         self.next = None
@@ -10,7 +10,7 @@ class Node:
     #################################
         
 class LinkedList:
-    ## WRITE LL CONSTRUCTOR HERE ##
+    ## CONSTRUCTORS HERE ##
     def __init__(self, value):
         new_node = Node(value)
         self.head = new_node
@@ -121,7 +121,17 @@ class LinkedList:
         self.length -= 1
         return temp
 
-        
+    def reverse(self):
+        temp = self.head
+        self.head = self.tail
+        self.tail = temp
+        bfortemp = None
+        afterTemp = temp.next
+        for i in range(self.length):
+            afterTemp = temp.next
+            temp.next = bfortemp
+            bfortemp = temp
+            temp = afterTemp
     #                             #
     #                             #
     #                             #
